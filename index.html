@@ -1,14 +1,250 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- NAVIGATION START -->
+    <nav>
+        <div class="logo">
+            <img src="../../assets/images/Logotechstore.jfif" alt="Logo Site" />
+        </div>
+        <ul class="navLinkContainer">
+            <li class="navLinks"><a href="pages/galerieProduit/galerieProduit.html">Produits</a></li>
+            <li class="navLinks"><a href="#">Bon Plans</a></li>
+            <li class="navLinks"><a href="pages/contact/contact.html">Contact</a></li>
+        </ul>
+        <div class="rightContent">
+            <div class="cartContentIcon">
+                <button class="addCartContent">
+                    <i class="bx bx-basket"></i>
+                </button>
+            </div>
+            <div class="search">
+                <button class="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <button class="btnHamburger" aria-label="Toggle Navigation Contain">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
+    <!-- HEADER START -->
+    <header>
+        <div class="container">
+            <div class="blocLeft">
+                <p>techstore</p>
+                <h1>Konect a Nou !</h1>
+                <p class="slogan">Top 3 des entreprises expertes en produits informatiques !</p>
+                <button><i class="fa-solid fa-cart-shopping"></i><a href="pages/galerieProduit/galerieProduit.html">Nos produits</a></button>
+            </div>
+            <div class="blocRight">
+                <img src="assets/ImageAccueil/header.jpg" alt="image header">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="produits">
+            <div class="container">
+                <div class="line">
+                    <div class="paiement">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>4X</span>
+                        <p>Paiement en 4 fois</p>
+                    </div>
+                    <div class="satisfaction">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Satisfait ou remboursé</p>
+                    </div>
+                    <div class="gift">
+                        <i class="fa-solid fa-gift"></i>
+                        <p>Livraison offerte dès <br>
+                            200€ d'achats</p>
+                    </div>
+                    <div class="delivery">
+                        <i class="fa-solid fa-truck"></i>
+                        <p>Livraison sous 72h</p>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <img src="assets/ImageAccueil/pcPortable.png" alt="image pc portable">
+                    <h2>PC Portable</h2>
+                    <hr>
+                    <h3>47 produits</h3>
+                    <p>Un large choix et différente gamme à prix défiant toute concurrence !</p>
+                    <button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button>
+                </div>
+                <div class="cardContainer">
+                    <img src="assets/ImageAccueil/pc-bureau.webp" alt="image pc de bureau">
+                    <h2>PC de bureau</h2>
+                    <hr>
+                    <h3>17 produits</h3>
+                    <p>Un large choix et différente gamme à prix défiant toute concurrence !</p>
+                    <button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button>
+                </div>
+                <div class="cardContainer">
+                    <img src="assets/ImageAccueil/peripherique.webp" alt="image périphérique">
+                    <h2>Périphérique</h2>
+                    <hr>
+                    <h3>121 produits</h3>
+                    <p>Un large choix et différente gamme à prix défiant toute concurrence !</p>
+                    <button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button>
+                </div>
+            </div>
+        </section>
+        <section class="bonPlans">
+            <h1 class="titleSection">Nos bon plans</h1>
+            <div class="container">
+                <div class="cardContainer">
+                    <img src="assets/ImageAccueil/PCportableMSI.png" alt="image pc portable msi">
+                    <div class="tag">
+                        <span>techstore</span>
+                        <span>msi</span>
+                    </div>
+                    <h1 class="titleCategories">PC Portable MSI</h1>
+                    <p>Alliant design et performance, ce pc portable MSI a tout pour plaire et subvenir à votre besoin !
+                    </p>
+                    <span class="bonPlan"><i class="fa-solid fa-clock"></i>-20% de réduction</span>
+                    <button>J'en profite <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="cardContainer">
+                    <img src="assets/ImageAccueil/PcGamer_1.png" alt="image pc portable msi">
+                    <div class="tag">
+                        <span>techstore</span>
+                        <span>msi</span>
+                    </div>
+                    <h1 class="titleCategories">PC Portable MSI</h1>
+                    <p>Alliant design et performance, ce pc portable MSI a tout pour plaire et subvenir à votre besoin !
+                    </p>
+                    <span class="bonPlan"><i class="fa-solid fa-clock"></i>-20% de réduction</span>
+                    <button>J'en profite <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="cardContainer">
+                    <img src="assets/ImageAccueil/Clavier_G915.png" alt="image pc portable msi">
+                    <div class="tag">
+                        <span>techstore</span>
+                        <span>msi</span>
+                    </div>
+                    <h1 class="titleCategories">PC Portable MSI</h1>
+                    <p>Alliant design et performance, ce pc portable MSI a tout pour plaire et subvenir à votre besoin !
+                    </p>
+                    <span class="bonPlan"><i class="fa-solid fa-clock"></i>-20% de réduction</span>
+                    <button>J'en profite <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER START -->
+    <footer>
+        <div class="containerFooter">
+            <div class="leftContent">
+                <div class="companyContent">
+                    <img src="../../assets/images/Logotechstore.jfif" alt="Logo du site" />
+                    <div class="textContent">
+                        <h1>TechStore</h1>
+                        <p>Top 3 des entreprises expertes en produits informatiques !</p>
+                    </div>
+                </div>
+                <div class="socialContainer">
+                    <span class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="instaIcon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="twitterIcon"><i class="fa-brands fa-twitter"></i></span>
+                </div>
+            </div>
+            <div class="rightContent">
+                <div class="hourly">
+                    <h2>Nos horaires</h2>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Lundi:</h3>
+                            <p>14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Mardi au vendredi:</h3>
+                            <p>9h-12h/14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Samedi:</h3>
+                            <p>9h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Dimanche:</h3>
+                            <p>Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>Informations</h2>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGU</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGV</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Mention Légales</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>Nous contacter</h2>
+                    <div class="addressContent">
+                        <p>
+                            123 rue street garden <br />
+                            97400 Saint Denis<br />La Réunion
+                        </p>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>techstore@mail.fr</p>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0123456789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

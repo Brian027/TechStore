@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVIGATION START -->
+    <nav>
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../assets/images/Logotechstore.jfif" alt="Logo Site" />
+            </a>
+        </div>
+        <ul class="navLinkContainer">
+            <li class="navLinks"><a href="../galerieProduit/galerieProduit.html">Produits</a></li>
+            <li class="navLinks"><a href="../../index.html">Bon Plans</a></li>
+            <li class="navLinks"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="rightContent">
+            <div class="cartContentIcon">
+                <button class="addCartContent">
+                    <i class="bx bx-basket"></i>
+                </button>
+            </div>
+            <div class="search">
+                <button class="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <button class="btnHamburger" aria-label="Toggle Navigation Contain">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="contact-box">
+
+
+
+                <img src="../../assets/images/cafecontact.png"
+                    alt="image_onepiece">
+                <div class="right">
+                    <h1>N'hésitez pas a nous contacter !</h1>
+                    <form>
+                        <fieldset>
+                            <legend>Quel est votre genre ?</legend>
+                            <div class="genre">
+                                <input type="radio" id="Madame" name="genre" value="genre">
+                                <label for="Madame">Madame</label>
+
+                                <input type="radio" id="Monsieur" name="genre" value="genre">
+                                <label for="Monsieur">Monsieur</label>
+
+                                <input id="Genre" type="radio" name="genre" value="genre">
+                                <label for="Genre">Autre</label>
+                            </div>
+                        </fieldset>
+
+                    </form>
+                    <br>
+
+                    <label for="nom">Nom Prénom :</label>
+
+                    <input id="nom" type="text" name="nom" class="texte" placeholder="Jean Marie">
+
+
+                    <label for="email">Email :</label>
+                    <input id="email" type="email" name="email" class="texte" placeholder="eva@gmail.com">
+
+
+                    <label for="telephone">Numéro :</label>
+                    <input id="telephone" type="tel" name="telephone" class="texte" placeholder="0692000000">
+
+                    <label for="message">Votre Message</label>
+                    <textarea name="message" id="message" class="text-area" cols="40" rows="8"
+                        placeholder="Votre message"></textarea>
+
+
+                    <input id="button" class="btn" type="button" value="Envoyer">
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FOOTER START -->
+    <footer>
+        <div class="containerFooter">
+            <div class="leftContent">
+                <div class="companyContent">
+                    <img src="../../assets/images/Logotechstore.jfif" alt="Logo du site" />
+                    <div class="textContent">
+                        <h1>TechStore</h1>
+                        <p>Top 3 des entreprises expertes en produits informatiques !</p>
+                    </div>
+                </div>
+                <div class="socialContainer">
+                    <span class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="instaIcon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="twitterIcon"><i class="fa-brands fa-twitter"></i></span>
+                </div>
+            </div>
+            <div class="rightContent">
+                <div class="hourly">
+                    <h2>Nos horaires</h2>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Lundi:</h3>
+                            <p>14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Mardi au vendredi:</h3>
+                            <p>9h-12h/14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Samedi:</h3>
+                            <p>9h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Dimanche:</h3>
+                            <p>Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>Informations</h2>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGU</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGV</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Mention Légales</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>Nous contacter</h2>
+                    <div class="addressContent">
+                        <p>
+                            123 rue street garden <br />
+                            97400 Saint Denis<br />La Réunion
+                        </p>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>techstore@mail.fr</p>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0123456789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

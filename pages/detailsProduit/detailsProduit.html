@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store 974</title>
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="detailsProduit.css">
+    <script src="https://kit.fontawesome.com/e24c59c638.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- NAVIGATION START -->
+    <nav>
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../assets/images/Logotechstore.jfif" alt="Logo Site" />
+            </a>
+        </div>
+        <ul class="navLinkContainer">
+            <li class="navLinks"><a href="../galerieProduit/galerieProduit.html">Produits</a></li>
+            <li class="navLinks"><a href="../../index.html">Bon Plans</a></li>
+            <li class="navLinks"><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <div class="rightContent">
+            <div class="cartContentIcon">
+                <button class="addCartContent">
+                    <i class="bx bx-basket"></i>
+                </button>
+            </div>
+            <div class="search">
+                <button class="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <button class="btnHamburger" aria-label="Toggle Navigation Contain">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <header>
+        <section>
+            <div class="detail">
+
+                <div class="left-content"><img src="../../assets/images/AsusRogDesktopGaming.png" alt=""></div>
+
+                <div class="right-content">
+                    <h1>Asus Rog Strix GT15</h1>
+                    <p>PC de Bureau</p>
+                    <br>
+                    <p class="line">€1699</p>
+                    <div class="prix">
+                        <h2>€1499</h2>
+                    </div>
+                    <br>
+
+
+                    <div class="container">
+                        <p>en stock</p>
+                        <div class="progressbar-wrapper">
+                            <div title="downloading" class="progressbar mp3"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <h2>Description:</h2>
+                    <br>
+                    <p>CPU : Intel Core i5 12600k</p>
+                    <br>
+                    <p>Carte mère : Asus Rog Strix z690</p>
+                    <br>
+                    <p>Ram : 16go DDR5 3600mhz</p>
+                    <br>
+                    <p>Carte graphique: AMD RX 6700xt</p>
+                    <br>
+                    <p>Stockage : 1to SSD Nvme + 2to HDD Seagate Barracuda</p>
+                    <br>
+                    <p>Alimentation : Corsair RM850X</p>
+                    <br>
+
+
+                    <div class="box">
+                        <div class="container-quantite">
+                            <h3>Quantité</h3>
+                            <br>
+                            <div class="quantity">
+                                <!--<input type="number" min="1" max="9" step="1" value="1">-->
+                                <div class="number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                    <input class="quantity" min="0" max="9" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="btn1"><button>Ajouter au panier</button></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="containerFooter">
+            <div class="leftContent">
+                <div class="companyContent">
+                    <img src="../../assets/images/Logotechstore.jfif" alt="Logo du site"/>
+                    <div class="textContent">
+                        <h1>TechStore</h1>
+                        <p>Top 3 des entreprises expertes en produits informatiques !</p>
+                    </div>
+                </div>
+                <div class="socialContainer">
+                    <span class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="instaIcon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="twitterIcon"><i class="fa-brands fa-twitter"></i></span>
+                </div>
+            </div>
+            <div class="rightContent">
+                <div class="hourly">
+                    <h2>Nos horaires</h2>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Lundi:</h3>
+                            <p>14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Mardi au vendredi:</h3>
+                            <p>9h-12h/14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Samedi:</h3>
+                            <p>9h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Dimanche:</h3>
+                            <p>Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>Informations</h2>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGU</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGV</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Mention Légales</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>Nous contacter</h2>
+                    <div class="addressContent">
+                        <p>
+                            123 rue street garden <br /> 97400 Saint Denis<br />La Réunion
+                        </p>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>techstore@mail.fr</p>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0123456789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

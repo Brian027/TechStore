@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos produits</title>
+    <link rel="stylesheet" href="galerieProduit.css" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="cartContentList">
+        <h2 class="cartTitle">Votre Panier</h2>
+        <div class="cartContent">
+
+        </div>
+        <div class="total">
+            <div class="totalTitle">
+                <h2>Total</h2>
+            </div>
+            <div class="totalPrice">
+                <p>€0</p>
+            </div>
+        </div>
+        <button type="button" class="btnBuy">Payer maintenant</button>
+        <i class="fa-solid fa-xmark" id="closeCart"></i>
+    </div>
+
+    <!-- NAVIGATION START -->
+    <nav>
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../assets/images/Logotechstore.jfif" alt="Logo Site" />
+            </a>
+        </div>
+        <ul class="navLinkContainer">
+            <li class="navLinks"><a href="galerieProduit.html">Produits</a></li>
+            <li class="navLinks"><a href="../../index.html">Bon Plans</a></li>
+            <li class="navLinks"><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <div class="rightContent">
+            <div class="cartContentIcon">
+                <button class="addCartContent">
+                    <i class="bx bx-basket"></i>
+                </button>
+            </div>
+            <div class="search">
+                <button class="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <button class="btnHamburger" aria-label="Toggle Navigation Contain">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <!-- HEADER START -->
+    <header>
+        <div class="titlePage">
+            <h1 class="titleProductHeader">Nos produits</h1>
+        </div>
+        <div class="containerGlobal">
+            <div class="sideBar">
+                <form action="#">
+                    <div class="formField">
+                        <input type="search" name="search" id="searchInput" placeholder="Rechercher" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="linkContainer">
+                        <div class="linkCategories">
+                            <a href="#">Périphérique</a>
+                            <a href="#">PC de bureau</a>
+                            <a href="#">PC portable</a>
+                            <a href="#">Tous les produits</a>
+                        </div>
+                        <div class="scrollBarContainer">
+                            <button class="up">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+                            <div class="scrollBar"></div>
+                            <button class="down">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="allCategories">
+                        Toutes les catégories <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="galleryProduct">
+                <div class="productCard">
+                    <div class="imgProduct">
+                        <img src="../../assets/images/AsusRogDesktopGaming.png" alt="Image Asus Rog" />
+                        <span>En stock</span>
+                    </div>
+                    <div class="productContent">
+                        <div class="tagNote">
+                            <p>TechStore - Asus</p>
+                            <span><i class="fa-solid fa-star"></i>4.9</span>
+                        </div>
+                        <div class="productDescription">
+                            <h2 class="productTitle">PC Gamer Asus</h2>
+                            <p>
+                                Le PC Gamer ASUS ROG STRIX GT15 allie puissance, praticité et
+                                élégance au service du divertissement numérique. Facile à
+                                transporter, grâce à sa poignée intégrée, ce PC Gamer ASUS
+                                offre aussi l'avantage d'une mise à niveau simplifiée.
+                            </p>
+                            <span><img src="../../assets/images/arrowtobracket.png" alt="image arrow bracket" />95
+                                Achats</span>
+                        </div>
+                        <div class="productPrice">
+                            <p>€1499</p>
+                        </div>
+                        <div class="callToAction">
+                            <button class="addToCard">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button class="viewProduct">
+                                <a href="../detailsProduit/detailsProduit.html" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productCard">
+                    <div class="imgProduct">
+                        <img src="../../assets/images/ASUS-TUF-GAMING-A15-566-QR-Credit-ASUS.webp"
+                            alt="Image Asus tuf" />
+                        <span>En stock</span>
+                    </div>
+                    <div class="productContent">
+                        <div class="tagNote">
+                            <p>TechStore - Asus</p>
+                            <span><i class="fa-solid fa-star"></i>4.9</span>
+                        </div>
+                        <div class="productDescription">
+                            <h2 class="productTitle">Asus tuf gaming</h2>
+                            <p>
+                                Le PC portable ASUS TUF GAMING F15 embarque tous les
+                                ingrédients du succès et de la performance : un puissant
+                                processeur, beaucoup de RAM, un SSD ultra-rapide, une carte
+                                graphique hautes performances et un écran Full HD 144 Hz pour
+                                une fluidité maximale dans les jeux.
+                            </p>
+                            <span><img src="../../assets/images/arrowtobracket.png" alt="image arrow bracket" />34
+                                Achats</span>
+                        </div>
+                        <div class="productPrice">
+                            <p>€849</p>
+                        </div>
+                        <div class="callToAction">
+                            <button class="addToCard">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button class="viewProduct">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productCard">
+                    <div class="imgProduct">
+                        <img src="../../assets/images/Msigk50lowprofile.png" alt="Image msi gk50 low profile" />
+                        <span>En stock</span>
+                    </div>
+                    <div class="productContent">
+                        <div class="tagNote">
+                            <p>TechStore - Msi</p>
+                            <span><i class="fa-solid fa-star"></i>4.9</span>
+                        </div>
+                        <div class="productDescription">
+                            <h2 class="productTitle">Msi GK50 Low profile</h2>
+                            <p>
+                                Préparez-vous pour la victoire avec le clavier mécanique Vigor
+                                GK50 Low Profile de MSI. Le GK50 offre une réactivité et une
+                                précision supérieures avec ses commutateurs à profil bas et
+                                ses touches octogonales confortables et robustes.
+                            </p>
+                            <span><img src="../../assets/images/arrowtobracket.png" alt="image arrow bracket" />127
+                                Achats</span>
+                        </div>
+                        <div class="productPrice">
+                            <p>€120</p>
+                        </div>
+                        <div class="callToAction">
+                            <button class="addToCard">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button class="viewProduct">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productCard">
+                    <div class="imgProduct">
+                        <img src="../../assets/images/Meg_aegisTi15.png" alt="Image Msi meg aegis" />
+                        <span>En stock</span>
+                    </div>
+                    <div class="productContent">
+                        <div class="tagNote">
+                            <p>TechStore - Msi</p>
+                            <span><i class="fa-solid fa-star"></i>4.9</span>
+                        </div>
+                        <div class="productDescription">
+                            <h2 class="productTitle">MSI MEG Aegis Ti5</h2>
+                            <p>
+                                Le PC Gamer MSI MEG Aegis Ti5 est novateur sur bien des
+                                aspects. En plus d'un design audacieux, il bénéficie d'une
+                                molette Gaming innovante en façade, d'une technologie audio
+                                basée sur l'IA, d'un système de refroidissement performant.
+                            </p>
+                            <span><img src="../../assets/images/arrowtobracket.png" alt="image arrow bracket" />14
+                                Achats</span>
+                        </div>
+                        <div class="productPrice">
+                            <p>€2249</p>
+                        </div>
+                        <div class="callToAction">
+                            <button class="addToCard">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button class="viewProduct">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productCard">
+                    <div class="imgProduct">
+                        <img src="../../assets/images/Pc__portablePulseDragonMsi.webp" alt="Image Msi pulse" />
+                        <span>En stock</span>
+                    </div>
+                    <div class="productContent">
+                        <div class="tagNote">
+                            <p>TechStore - Msi</p>
+                            <span><i class="fa-solid fa-star"></i>4.9</span>
+                        </div>
+                        <div class="productDescription">
+                            <h2 class="productTitle">MSI Pulse 17 Dragon Station</h2>
+                            <p>
+                                Mettez toutes les chances de votre côté pour atteindre les
+                                sommets avec l'ordinateur portable MSI Pulse 17 B13 ! Ce PC
+                                portable gaming bénéficie d'un écran IPS avec fréquence de 144
+                                Hz et résolution FHD ; il offre de hautes performances grâce à
+                                ses composants Gaming.
+                            </p>
+                            <span><img src="../../assets/images/arrowtobracket.png" alt="image arrow bracket" />32
+                                Achats</span>
+                        </div>
+                        <div class="productPrice">
+                            <p>€1869</p>
+                        </div>
+                        <div class="callToAction">
+                            <button class="addToCard">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button class="viewProduct">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productCard">
+                    <div class="imgProduct">
+                        <img src="../../assets/images/fra-g915-wireless-gallery-topdown.png"
+                            alt="Image Clavier logitech g915" />
+                        <span>En stock</span>
+                    </div>
+                    <div class="productContent">
+                        <div class="tagNote">
+                            <p>TechStore - Logitech</p>
+                            <span><i class="fa-solid fa-star"></i>4.9</span>
+                        </div>
+                        <div class="productDescription">
+                            <h2 class="productTitle">Logitech G915</h2>
+                            <p>
+                                Rigoureusement conçu à partir de matériaux premium, le clavier
+                                Logitech G915 TKL Lightspeed est doté d'un design sophistiqué,
+                                d'une robustesse à toute épreuve et de performances sans
+                                précédent. Équipé de la technologie sans fil Lightspeed, vous
+                                bénéficiez d'une réactivité extrêmement rapide.
+                            </p>
+                            <span><img src="../../assets/images/arrowtobracket.png" alt="image arrow bracket" />127
+                                Achats</span>
+                        </div>
+                        <div class="productPrice">
+                            <p>€189</p>
+                        </div>
+                        <div class="callToAction">
+                            <button class="addToCard">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                            <button class="viewProduct">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FOOTER START -->
+    <footer>
+        <div class="containerFooter">
+            <div class="leftContent">
+                <div class="companyContent">
+                    <img src="../../assets/images/Logotechstore.jfif" alt="Logo du site" />
+                    <div class="textContent">
+                        <h1>TechStore</h1>
+                        <p>Top 3 des entreprises expertes en produits informatiques !</p>
+                    </div>
+                </div>
+                <div class="socialContainer">
+                    <span class="facebookIcon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="instaIcon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="twitterIcon"><i class="fa-brands fa-twitter"></i></span>
+                </div>
+            </div>
+            <div class="rightContent">
+                <div class="hourly">
+                    <h2>Nos horaires</h2>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Lundi:</h3>
+                            <p>14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Mardi au vendredi:</h3>
+                            <p>9h-12h/14h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Samedi:</h3>
+                            <p>9h-18h</p>
+                        </div>
+                    </div>
+                    <div class="dayContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="dayHours">
+                            <h3>Dimanche:</h3>
+                            <p>Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>Informations</h2>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGU</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">CGV</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Mention Légales</a>
+                        </div>
+                    </div>
+                    <div class="infoContent">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <div class="link">
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>Nous contacter</h2>
+                    <div class="addressContent">
+                        <p>
+                            123 rue street garden <br />
+                            97400 Saint Denis<br />La Réunion
+                        </p>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>techstore@mail.fr</p>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0123456789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="galerieProduit.js"></script>
+</body>
+
+</html>
