@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Store 974</title>
+    <title>Details Produits</title>
     <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="detailsProduit.css">
     <script src="https://kit.fontawesome.com/e24c59c638.js" crossorigin="anonymous"></script>
@@ -13,6 +13,22 @@
 </head>
 
 <body>
+    <div class="cartContentList">
+        <h2 class="cartTitle">Votre Panier</h2>
+        <div class="cartContent">
+
+        </div>
+        <div class="total">
+            <div class="totalTitle">
+                <h2>Total</h2>
+            </div>
+            <div class="totalPrice">
+                <p>€0</p>
+            </div>
+        </div>
+        <button type="button" class="btnBuy">Payer maintenant</button>
+        <i class="fa-solid fa-xmark" id="closeCart"></i>
+    </div>
     <!-- NAVIGATION START -->
     <nav>
         <div class="logo">
@@ -21,13 +37,26 @@
             </a>
         </div>
         <ul class="navLinkContainer">
-            <li class="navLinks"><a href="../galerieProduit/galerieProduit.html">Produits</a></li>
-            <li class="navLinks"><a href="../../index.html">Bon Plans</a></li>
-            <li class="navLinks"><a href="../contact/contact.html">Contact</a></li>
+            <li class="navLinks">
+                <a href="../galerieProduit/galerieProduit.html">Produits</a>
+                <i class='bx bx-chevron-down'></i>
+                <ul>
+                    <li><a href="../pcPortable/pcPortable.html">Pc Portable</a></li>
+                    <li><a href="../pc_de_bureau/pcdebureau.html">Pc de bureau</a></li>
+                    <li><a href="../peripherique/peripherique.html">Périphérique</a></li>
+                </ul>
+            </li>
+            <li class="navLinks">
+                <a href="../../index.html">Bon Plans</a>
+            </li>
+            <li class="navLinks">
+                <a href="../contact/contact.html">Contact</a>
+            </li>
         </ul>
         <div class="rightContent">
             <div class="cartContentIcon">
                 <button class="addCartContent">
+                    <p id="count">0</p>
                     <i class="bx bx-basket"></i>
                 </button>
             </div>
@@ -44,68 +73,48 @@
         </button>
     </nav>
     <header>
-        <section>
-            <div class="detail">
-
-                <div class="left-content"><img src="../../assets/images/AsusRogDesktopGaming.png" alt=""></div>
-
-                <div class="right-content">
-                    <h1>Asus Rog Strix GT15</h1>
-                    <p>PC de Bureau</p>
-                    <br>
-                    <p class="line">€1699</p>
-                    <div class="prix">
-                        <h2>€1499</h2>
-                    </div>
-                    <br>
-
-
-                    <div class="container">
-                        <p>en stock</p>
-                        <div class="progressbar-wrapper">
-                            <div title="downloading" class="progressbar mp3"></div>
-                        </div>
-                    </div>
-                    <br>
-                    <h2>Description:</h2>
-                    <br>
-                    <p>CPU : Intel Core i5 12600k</p>
-                    <br>
-                    <p>Carte mère : Asus Rog Strix z690</p>
-                    <br>
-                    <p>Ram : 16go DDR5 3600mhz</p>
-                    <br>
-                    <p>Carte graphique: AMD RX 6700xt</p>
-                    <br>
-                    <p>Stockage : 1to SSD Nvme + 2to HDD Seagate Barracuda</p>
-                    <br>
-                    <p>Alimentation : Corsair RM850X</p>
-                    <br>
-
-
-                    <div class="box">
-                        <div class="container-quantite">
-                            <h3>Quantité</h3>
-                            <br>
-                            <div class="quantity">
-                                <!--<input type="number" min="1" max="9" step="1" value="1">-->
-                                <div class="number-input">
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
-                                    <input class="quantity" min="0" max="9" name="quantity" value="1" type="number">
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                                </div>
-                            </div>
-                            <br>
-
-                            <div class="btn1"><button>Ajouter au panier</button></div>
-
-                        </div>
-                    </div>
-
+        <div class="containerGlobal">
+            <div class="flexItem">
+                <div class="imgBloc">
+                    <img src="../../assets/images/Asus-ROG-Huracan-G21.webp" alt="Image PC Asus Rog Huracan G21">
                 </div>
             </div>
-        </section>
-
+            <div class="flexItem">
+                    <h1 class="titleProductDescription">Asus Rog Strix Huracan G21</h1>
+                    <span class="categories">Pc de bureau</span>
+                    <div class="price">
+                        <span class="priceOff">€1699</span>
+                        <span class="priceNow">€1499</span>
+                    </div>
+                    <div class="state">
+                        <p class="stateProduct">En stock</p>
+                        <span class="progressLine" aria-label="Progress Bar"></span>
+                    </div>
+                    <div class="technicalSheet">
+                        <h2 class="technicalSheetTitle">Description:</h2>
+                        <p class="technicalSheetDescription">
+                            CPU: Intel core i5 12600k <br>
+                            Carte Mère: Asus rog strix z690 <br>
+                            Ram: 16go ddr5 3600mhz <br>
+                            Carte graphique: AMD RX 6700xt <br>
+                            Stockage: 1to sdd nvme + 2to hdd seagate barracuda <br>
+                            Alimentation: Corsair RM850X
+                        </p>
+                    </div>
+                    <div class="wrapContainer">
+                        <h2>Quantité</h2>
+                        <div class="inputField">
+                            <button id="decrement">-</button>
+                            <input type="number" min="1" max="10" value="1" step="1" id="cartQuantity">
+                            <button id="increment">+</button>
+                        </div>
+                        <div class="callToActionProduct">
+                            <button class="pay">Payer maintenant</button>
+                            <button class="addToCart" title="Ajouter au panier" aria-label="Ajouter au panier"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
     </header>
 
     <!-- FOOTER START -->
@@ -203,6 +212,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="detailsProduit.js"></script>
 </body>
 
 </html>

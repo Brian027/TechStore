@@ -146,7 +146,6 @@ body::-webkit-scrollbar-thumb {
 /* NAVIGATION STYLE START */
 
 nav {
-    min-width: 250px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -310,116 +309,285 @@ nav .btnHamburger {
     display: none;
 }
 
-/* CONTACT STYLE START */
+/* HEADER STYLE START */
 
 header {
-    padding: 3rem 0;
+    padding: 4rem 0;
+}
+
+header .titlePage .titleProductHeader {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 header .containerGlobal {
-    max-width: 1440px;
-    width: 80%;
-    height: 700px;
-    margin: 2rem auto;
-    display: flex;
+    max-width: 1600px;
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    background-image: url("../../assets/images/FondContact.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    border-radius: 50px;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
 }
 
-header .containerGlobal .flexItem {
-    min-width: 150px;
-    max-width: 650px;
-    height: 600px;
+/*  Side Bar style start */
+
+header .containerGlobal .sideBar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-header .containerGlobal .flexItem:nth-child(1) {
+header .containerGlobal .sideBar form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 1rem;
+    height: 500px;
 }
 
-header .containerGlobal .flexItem:nth-child(1) h1 {
-    font-size: 2.5rem;
-}
-
-header .containerGlobal .flexItem:nth-child(1) p {
-    font-size: .85rem;
-    font-weight: 600;
-    max-width: 500px;
-}
-
-header .containerGlobal .flexItem:nth-child(1) form .formField {
-    display: flex;
-    margin: 1rem 0;
-}
-
-header .containerGlobal .flexItem:nth-child(1) form .formField label {
-    display: none;
-}
-
-header .containerGlobal .flexItem:nth-child(1) form .formField input, form .formField select {
+header .containerGlobal .sideBar form .formField {
+    position: relative;
     width: 100%;
-    padding: 12px 20px;
-    border: 1px solid #e0e0e0;
-    font-family: 'poppins';
 }
 
-header .containerGlobal .flexItem:nth-child(1) form .formField input[type="number"]::-webkit-inner-spin-button {
-    display: none;
-}
-
-header .containerGlobal .flexItem:nth-child(1) form .formField input[type="number"]::-webkit-outer-spin-button {
-    display: none;
-}
-
-header .containerGlobal .flexItem:nth-child(1) form button {
-    width: 100%;
-    padding: 16px 24px;
-    background-color: #1e111b;
+header .containerGlobal .sideBar form .formField input {
+    background-color: #f0f0f0;
     border: none;
-    color: #fafafa;
-    border-radius: 6px;
-    text-transform: uppercase;
-    font-family: 'poppins';
-    cursor: pointer;
+    padding: 22px 16px;
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 50px;
+    outline-color: #1e111b;
+}
+
+
+header .containerGlobal .sideBar form .formField i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #6e757e;
+}
+
+header .containerGlobal .sideBar form .linkContainer {
+    display: flex;
+    height: 80%;
+    margin: 2rem 0;
+    justify-content: space-between;
+}
+
+header .containerGlobal .sideBar form .linkContainer .linkCategories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .containerGlobal .sideBar form .linkContainer .linkCategories a {
+    color: #151515;
     font-weight: 600;
 }
 
-header .containerGlobal .flexItem:nth-child(1) .contactInfo {
+header .containerGlobal .sideBar form .linkContainer .scrollBarContainer {
+    width: 2px;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .containerGlobal .sideBar form .linkContainer .scrollBarContainer .scrollBar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e111b;
+    width: 2px;
+    height: 15px;
+}
+
+header .containerGlobal .sideBar form .linkContainer .scrollBarContainer button {
+    border: none;
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: #1e111b;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+header .containerGlobal .sideBar form button.allCategories {
+    border: none;
+    padding: 22px 20px;
+    border-radius: 10px;
+    background-color: #1e111b;
+    color: #fafafa;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 2rem 0;
+    align-items: center;
+    width: 80%;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-header .containerGlobal .flexItem:nth-child(1) .contactInfo h2 {
-    font-size: 1rem;
+/* Gallery product style start */
+
+header .containerGlobal .galleryProduct {
+    display: grid;
+    max-width: 1300px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 500px);
+    gap: 30px;
 }
 
-header .containerGlobal .flexItem:nth-child(1) .contactInfo .tel, .contactInfo .fax, .contactInfo .email {
+header .containerGlobal .galleryProduct .productCard {
+    max-width: 500px;
+    max-height: 390px;
     display: flex;
     align-items: center;
-    gap: .5rem;
 }
 
-header .containerGlobal .flexItem:nth-child(1) .contactInfo i {
-    font-size: 28px;
-}
-
-header .containerGlobal .flexItem img {
+header .containerGlobal .galleryProduct .productCard .imgProduct {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #000;
     width: 100%;
     height: 100%;
+    flex-basis: 40%;
+    background-color: #1e111b;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.productCard .imgProduct img {
     object-fit: cover;
-    object-position: center;
-    border-radius: 6px;
+    width: 100%;
+}
+
+header .containerGlobal .galleryProduct .productCard .imgProduct span {
+    color: #fafafa;
+    background-color: #07484A;
+    position: absolute;
+    border-radius: 3px;
+    padding: 0 10px;
+    top: 20px;
+    left: 20px;
+    user-select: none;
+    animation: animSpan 1s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@keyframes animSpan {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/*********************************  *********************************/
+
+header .containerGlobal .galleryProduct .productCard .productContent {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 0 25px;
+    justify-content: space-between;
+    height: 90%;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .tagNote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .tagNote p {
+    font-size: 12px;
+    color: #6e757e;
+    font-weight: 600;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .tagNote span {
+    background-color: #1e111b;
+    color: #fafafa;
+    border-radius: 20px;
+    padding: 5px 8px;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .tagNote span i{
+    color: #ffce31FF;
+    padding-right: 5px;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .productDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .productDescription h2 {
+    font-size: 16px;
+    color: #151515;
+    font-weight: 700;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .productDescription p {
+    font-size: 12px;
+    color: #737373;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .productDescription span {
+    display: flex;
+    align-items: center;
+    color: #737373;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .productDescription span img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .productPrice p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .callToAction {
+    display: flex;
+    width: 50%;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .callToAction button {
+    padding: 15px 5px;
+    margin: 10px 5px;
+    border: none;
+    background-color: #1e111b;
+    border-radius: 32px;
+    color: #fafafa;
+    cursor: pointer;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .containerGlobal .galleryProduct .productCard .productContent .callToAction button i{
+    color: #fafafa;
+    font-size: 16px;
 }
 
 /* FOOTER STYLE START */
@@ -431,7 +599,6 @@ footer {
 
 footer .containerFooter {
     max-width: 1600px;
-    min-width: 250px;
     width: 80%;
     height: auto;
     margin: 30px auto;
@@ -465,7 +632,6 @@ footer .containerFooter .leftContent .companyContent .textContent {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    max-width: 250px;
 }
 
 footer .containerFooter .leftContent .companyContent .textContent h1 {
@@ -625,6 +791,72 @@ footer .containerFooter .rightContent .contact .phone {
         padding: 0 1rem;
     }
 
+    /* HEADER STYLE START */
+
+    header .containerGlobal {
+        max-width: 1600px;
+        width: 90%;
+        height: auto;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    header .containerGlobal .sideBar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    header .containerGlobal .sideBar form {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-items: center;
+        height: auto;
+    }
+    header .containerGlobal .sideBar form .formField {
+        position: relative;
+        width: 100%;
+    }
+    
+    header .containerGlobal .sideBar form .formField input {
+        background-color: #f0f0f0;
+        border: none;
+        padding: 22px 16px;
+        border-radius: 10px;
+        width: 100%;
+        padding-left: 50px;
+        outline-color: #1e111b;
+    }
+    
+    header .containerGlobal .sideBar form .linkContainer .linkCategories {
+        display: none;
+    }
+    
+    header .containerGlobal .sideBar form .linkContainer .scrollBarContainer {
+        display: none;
+    }
+    
+    header .containerGlobal .sideBar form button.allCategories {
+        border: none;
+        padding: 0px 15px;
+        height: 90%;
+        border-radius: 10px;
+        background-color: #1e111b;
+        color: #fafafa;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: clamp(.6rem, .8vw, 1.5rem);
+    }
+
     /* FOOTER START */
 
     footer .containerFooter .rightContent {
@@ -643,21 +875,9 @@ footer .containerFooter .rightContent .contact .phone {
     }
 }
 
-
-
 /* -------------- --------------- */
 /* -- PC PORTABLE AND TABLET --- */
 /* ------------- -------------- */
-
-@media screen and (max-width: 1300px){
-    header .containerGlobal {
-        background-image: none;
-    }
-
-    header .containerGlobal .flexItem:nth-child(2){
-        display: none;
-    }
-}
 
 @media screen and (max-width: 1271px) {
 
@@ -667,6 +887,13 @@ footer .containerFooter .rightContent .contact .phone {
         padding: 0 .5rem;
     }
 
+    /* HEADER STYLE */
+
+    header .titlePage .titleProductHeader {
+        max-width: 1170px;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -674,13 +901,12 @@ footer .containerFooter .rightContent .contact .phone {
     /* FOOTER STYLE */
 
     footer .containerFooter {
-        max-width: 300px;
+        max-width: 1600px;
         width: 80%;
         height: auto;
         margin: 30px auto;
         display: grid;
-        grid-template-columns: 250px;
-        justify-content: flex-start;
+        grid-template-columns: 350px;
         gap: 30px;
     }
 
@@ -704,17 +930,6 @@ footer .containerFooter .rightContent .contact .phone {
     }
 }
 
-@media screen and (max-width:880px) {
-    .contact-box {
-        margin: 5rem auto;
-        max-width: 800px;
-        grid-template-columns: 1fr;
-    }
-    .left {
-        height: 200px;
-    }
-}
-
 /* -------------- --------------- */
 /* -- SMARTPHONE DEVICE START -- */
 /* ------------- -------------- */
@@ -724,7 +939,6 @@ footer .containerFooter .rightContent .contact .phone {
     /* NAVIGATION STYLE START */
 
     nav {
-        top: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -814,11 +1028,194 @@ footer .containerFooter .rightContent .contact .phone {
         background-color: #fafafa;
     }
 
+    /* HEADER STYLE START */
+
     header .containerGlobal {
-        margin: 5rem auto;
+        max-width: 1600px;
+        width: 90%;
+        height: auto;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    header .containerGlobal .sideBar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    header .containerGlobal .sideBar form {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-items: center;
+        height: auto;
+    }
+    header .containerGlobal .sideBar form .formField {
+        position: relative;
+        width: 100%;
+    }
+    
+    header .containerGlobal .sideBar form .formField input {
+        background-color: #f0f0f0;
+        border: none;
+        padding: 22px 16px;
+        border-radius: 10px;
+        width: 100%;
+        padding-left: 50px;
+        outline-color: #1e111b;
+    }
+    
+    header .containerGlobal .sideBar form .linkContainer .linkCategories {
+        display: none;
+    }
+    
+    header .containerGlobal .sideBar form .linkContainer .scrollBarContainer {
+        display: none;
+    }
+    
+    header .containerGlobal .sideBar form button.allCategories {
+        border: none;
+        padding: 0px 15px;
+        height: 90%;
+        border-radius: 10px;
+        background-color: #1e111b;
+        color: #fafafa;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: clamp(.6rem, .8vw, 1.5rem);
+    }
+
+    header .containerGlobal .galleryProduct {
+        display: grid;
+        max-width: 700px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 500px);
+        gap: 30px;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard {
+        max-width: 500px;
+        max-height: 390px;
+        display: flex;
+        align-items: center;
     }
 }
 
 /* --------------------- ---------------------- */
 /* -- SMARTPHONE DEVICE START DISPLAY SMALL -- */
 /* -------------------- --------------------- */
+
+@media screen and (max-width: 570px) {
+
+    /* HEADER STYLE START */
+
+    header .containerGlobal .galleryProduct {
+        display: grid;
+        max-width: 600px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 450px);
+        gap: 30px;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard {
+        width: 450px;
+        display: flex;
+        align-items: center;
+    }
+
+    header .containerGlobal .galleryProduct .productCard .productContent .tagNote p {
+        font-size: 8px;
+        color: #6e757e;
+        font-weight: 600;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .tagNote span {
+        background-color: #1e111b;
+        font-size: 10px;
+        color: #fafafa;
+        border-radius: 20px;
+        padding: 5px 8px;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .productDescription h2 {
+        font-size: 10px;
+        color: #151515;
+        font-weight: 700;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .productDescription p {
+        font-size: 8px;
+        color: #737373;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .productDescription span {
+        display: flex;
+        align-items: center;
+        color: #737373;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .productDescription span img {
+        width: 12px;
+        height: 12px;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .productPrice p {
+        font-size: 12px;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .callToAction button {
+        padding: 15px 5px;
+        margin: 10px 5px;
+        border: none;
+        background-color: #1e111b;
+        border-radius: 32px;
+        color: #fafafa;
+        cursor: pointer;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard .productContent .callToAction button i{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    header .containerGlobal .galleryProduct {
+        display: grid;
+        max-width: 700px;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 350px);
+        gap: 30px;
+    }
+    
+    header .containerGlobal .galleryProduct .productCard {
+        width: 350px;
+        height: 240px;
+        display: flex;
+        align-items: center;
+    }
+}

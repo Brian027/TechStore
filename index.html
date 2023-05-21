@@ -14,19 +14,52 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <div class="cartContentList">
+        <h2 class="cartTitle">Votre Panier</h2>
+        <div class="cartContent">
+
+        </div>
+        <div class="total">
+            <div class="totalTitle">
+                <h2>Total</h2>
+            </div>
+            <div class="totalPrice">
+                <p>€0</p>
+            </div>
+        </div>
+        <button type="button" class="btnBuy">Payer maintenant</button>
+        <i class="fa-solid fa-xmark" id="closeCart"></i>
+    </div>
+
     <!-- NAVIGATION START -->
     <nav>
         <div class="logo">
-            <img src="assets/images/Logotechstore.jfif" alt="Logo Site" />
+            <a href="index.html">
+                <img src="assets/images/Logotechstore.jfif" alt="Logo Site" />
+            </a>
         </div>
         <ul class="navLinkContainer">
-            <li class="navLinks"><a href="pages/galerieProduit/galerieProduit.html">Produits</a></li>
-            <li class="navLinks"><a href="#">Bon Plans</a></li>
-            <li class="navLinks"><a href="pages/contact/contact.html">Contact</a></li>
+            <li class="navLinks">
+                <a href="pages/galerieProduit/galerieProduit.html">Produits</a>
+                <i class='bx bx-chevron-down'></i>
+                <ul>
+                    <li><a href="pages/pcPortable/pcPortable.html">Pc Portable</a></li>
+                    <li><a href="pages/pc_de_bureau/pcdebureau.html">Pc de bureau</a></li>
+                    <li><a href="pages/peripherique/peripherique.html">Périphérique</a></li>
+                </ul>
+            </li>
+            <li class="navLinks">
+                <a href="#">Bon Plans</a>
+            </li>
+            <li class="navLinks">
+                <a href="pages/contact/contact.html">Contact</a>
+            </li>
         </ul>
         <div class="rightContent">
             <div class="cartContentIcon">
                 <button class="addCartContent">
+                    <p id="count">0</p>
                     <i class="bx bx-basket"></i>
                 </button>
             </div>
@@ -50,7 +83,7 @@
                 <p>techstore</p>
                 <h1>Konect a Nou !</h1>
                 <p class="slogan">Top 3 des entreprises expertes en produits informatiques !</p>
-                <button><i class="fa-solid fa-cart-shopping"></i><a href="pages/galerieProduit/galerieProduit.html">Nos produits</a></button>
+                <a href="pages/galerieProduit/galerieProduit.html"><i class="fa-solid fa-cart-shopping"></i>Nos produits</a>
             </div>
             <div class="blocRight">
                 <img src="assets/ImageAccueil/header.jpg" alt="image header">
@@ -84,25 +117,25 @@
                     <img src="assets/ImageAccueil/pcPortable.png" alt="image pc portable">
                     <h2>PC Portable</h2>
                     <hr>
-                    <h3>47 produits</h3>
+                    <h3>6 produits</h3>
                     <p>Un large choix et différente gamme à prix défiant toute concurrence !</p>
-                    <button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button>
+                    <a href="pages/pcPortable/pcPortable.html"><button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button></a>
                 </div>
                 <div class="cardContainer">
                     <img src="assets/ImageAccueil/pc-bureau.webp" alt="image pc de bureau">
                     <h2>PC de bureau</h2>
                     <hr>
-                    <h3>17 produits</h3>
+                    <h3>6 produits</h3>
                     <p>Un large choix et différente gamme à prix défiant toute concurrence !</p>
-                    <button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button>
+                    <a href="pages/pc_de_bureau/pcdebureau.html"><button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button></a>
                 </div>
                 <div class="cardContainer">
                     <img src="assets/ImageAccueil/peripherique.webp" alt="image périphérique">
                     <h2>Périphérique</h2>
                     <hr>
-                    <h3>121 produits</h3>
+                    <h3>6 produits</h3>
                     <p>Un large choix et différente gamme à prix défiant toute concurrence !</p>
-                    <button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button>
+                    <a href="pages/peripherique/peripherique.html"><button><i class="fa-solid fa-cart-shopping"></i>Aller voir</button></a>
                 </div>
             </div>
         </section>
@@ -127,22 +160,22 @@
                         <span>techstore</span>
                         <span>msi</span>
                     </div>
-                    <h1 class="titleCategories">PC Portable MSI</h1>
-                    <p>Alliant design et performance, ce pc portable MSI a tout pour plaire et subvenir à votre besoin !
+                    <h1 class="titleCategories">PC de bureau MSI</h1>
+                    <p>Alliant design et performance, ce pc de bureau MSI a tout pour plaire et subvenir à votre besoin !
                     </p>
-                    <span class="bonPlan"><i class="fa-solid fa-clock"></i>-20% de réduction</span>
+                    <span class="bonPlan"><i class="fa-solid fa-clock"></i>Livraison gratuite</span>
                     <button>J'en profite <i class="fa-solid fa-chevron-right"></i></button>
                 </div>
                 <div class="cardContainer">
                     <img src="assets/ImageAccueil/Clavier_G915.png" alt="image pc portable msi">
                     <div class="tag">
                         <span>techstore</span>
-                        <span>msi</span>
+                        <span>logitech</span>
                     </div>
-                    <h1 class="titleCategories">PC Portable MSI</h1>
-                    <p>Alliant design et performance, ce pc portable MSI a tout pour plaire et subvenir à votre besoin !
+                    <h1 class="titleCategories">Clavier Logitech G915</h1>
+                    <p>Alliant design et performance, ce clavier logitech a tout pour plaire et subvenir à votre besoin !
                     </p>
-                    <span class="bonPlan"><i class="fa-solid fa-clock"></i>-20% de réduction</span>
+                    <span class="bonPlan"><i class="fa-solid fa-clock"></i>Un casque offert</span>
                     <button>J'en profite <i class="fa-solid fa-chevron-right"></i></button>
                 </div>
             </div>
@@ -153,7 +186,7 @@
         <div class="containerFooter">
             <div class="leftContent">
                 <div class="companyContent">
-                    <img src="../../assets/images/Logotechstore.jfif" alt="Logo du site" />
+                    <img src="assets/images/Logotechstore.jfif" alt="Logo du site" />
                     <div class="textContent">
                         <h1>TechStore</h1>
                         <p>Top 3 des entreprises expertes en produits informatiques !</p>

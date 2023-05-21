@@ -23,6 +23,126 @@ body::-webkit-scrollbar-thumb {
     background-color: #1e111b;
 }
 
+/* PANIER CONTAINER STYLE START */
+
+.cartContentList {
+    padding: 2rem 1.8rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fafafa;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: -2px 0 24px rgba(0, 0, 0, 0.7);
+    transform: translateX(110%);
+    transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cartContentList::-webkit-scrollbar {
+    appearance: none;
+    display: none;
+}
+
+.cartContentList.active {
+    transform: translateX(0);
+}
+
+.cartContentList .cartTitle {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.cartContentList .cartContent .cartBox {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.cartContentList .cartContent .cartBox img {
+    width: 100px;
+    height: 100px;
+    background-color: #1e111b;
+    border-radius: 20px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.cartContentList .cartContent .cartBox .detailBox {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cartContentList .cartContent .cartBox .detailBox .cartProductTitle h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cartContentList .cartContent .cartBox .detailBox .cartPrice p {
+    font-weight: 500;
+}
+
+.cartContentList .cartContent .cartBox .detailBox .cartQuantity {
+    width: 2.4rem;
+    text-align: center;
+    border: 2px solid #1e111b;
+    border-radius: 6px;
+    font-family: 'poppins';
+    font-size: 1rem;
+}
+
+.cartContentList .cartContent .cartBox .cartRemove {
+    font-size: 24px;
+    color: #1e111b;
+    cursor: pointer;
+}
+
+.cartContentList .total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid #151515;
+}
+
+.cartContentList .total .totalTitle h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cartContentList .total .totalPrice p {
+    margin-left: 0.5rem;
+}
+
+.cartContentList .btnBuy {
+    display: flex;
+    margin-top: 1.5rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1e111b;
+    color: #fafafa;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+
+.cartContentList #closeCart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 /* NAVIGATION STYLE START */
 
 nav {
@@ -65,6 +185,43 @@ nav .navLinkContainer .navLinks {
     padding: 0 1.5rem;
 }
 
+nav .navLinkContainer .navLinks:nth-child(1) {
+    position: relative;
+}
+
+nav .navLinkContainer .navLinks:nth-child(1) ul {
+    top: 4.35rem;
+    position: absolute;
+    width: 200px;
+    background-color: #1e111b;
+    border: 1px solid #1e111ba4;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav .navLinkContainer:focus-within .navLinks:nth-child(1) ul,
+nav .navLinkContainer:hover .navLinks:nth-child(1) ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav .navLinkContainer .navLinks:nth-child(1) ul li {
+    width: 100%;
+    line-height: 3.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+nav .navLinkContainer .navLinks:nth-child(1) ul li a {
+    color: #fafafa;
+}
+
+nav .navLinkContainer .navLinks:nth-child(1) ul li a {
+    padding: 2.5rem 1.5rem;
+    font-weight: 600;
+}
+
 nav .navLinkContainer .navLinks a {
     color: #fafafa;
     font-size: 16px;
@@ -93,9 +250,8 @@ nav .rightContent .cartContentIcon .addCartContent {
     position: relative;
 }
 
-nav .rightContent .cartContentIcon .addCartContent::before {
+nav .rightContent .cartContentIcon .addCartContent #count {
     position: absolute;
-    content: attr(data-count);
     background-color: #ffce31;
     width: 20px;
     height: 20px;
@@ -106,7 +262,6 @@ nav .rightContent .cartContentIcon .addCartContent::before {
     font-weight: 900;
     top: -20%;
     left: -50%;
-    opacity: 0;
 }
 
 nav .rightContent .cartContentIcon .addCartContent.on::before{
@@ -191,8 +346,7 @@ header .container .blocLeft .slogan {
     font-weight: 500;
 }
 
-header .container .blocLeft button {
-    border: none;
+header .container .blocLeft a {
     padding: 1.2rem;
     width: 200px;
     background-color: #1e111b;
@@ -201,14 +355,9 @@ header .container .blocLeft button {
     align-items: center;
     font-family: 'poppins';
     border-radius: 6px;
-    cursor: pointer;
 }
 
-header .container .blocLeft button a {
-    color: #fafafa;
-}
-
-header .container .blocLeft button i {
+header .container .blocLeft a i {
     margin-right: 10px;
 }
 

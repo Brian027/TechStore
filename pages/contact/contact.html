@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - TechStore</title>
     <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="contact.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -15,6 +15,22 @@
 </head>
 
 <body>
+    <div class="cartContentList">
+        <h2 class="cartTitle">Votre Panier</h2>
+        <div class="cartContent">
+
+        </div>
+        <div class="total">
+            <div class="totalTitle">
+                <h2>Total</h2>
+            </div>
+            <div class="totalPrice">
+                <p>€0</p>
+            </div>
+        </div>
+        <button type="button" class="btnBuy">Payer maintenant</button>
+        <i class="fa-solid fa-xmark" id="closeCart"></i>
+    </div>
     <!-- NAVIGATION START -->
     <nav>
         <div class="logo">
@@ -23,13 +39,26 @@
             </a>
         </div>
         <ul class="navLinkContainer">
-            <li class="navLinks"><a href="../galerieProduit/galerieProduit.html">Produits</a></li>
-            <li class="navLinks"><a href="../../index.html">Bon Plans</a></li>
-            <li class="navLinks"><a href="contact.html">Contact</a></li>
+            <li class="navLinks">
+                <a href="../galerieProduit/galerieProduit.html">Produits</a>
+                <i class='bx bx-chevron-down'></i>
+                <ul>
+                    <li><a href="../pcPortable/pcPortable.html">Pc Portable</a></li>
+                    <li><a href="../pc_de_bureau/pcdebureau.html">Pc de bureau</a></li>
+                    <li><a href="../peripherique/peripherique.html">Périphérique</a></li>
+                </ul>
+            </li>
+            <li class="navLinks">
+                <a href="../../index.html">Bon Plans</a>
+            </li>
+            <li class="navLinks">
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
         <div class="rightContent">
             <div class="cartContentIcon">
                 <button class="addCartContent">
+                    <p id="count">0</p>
                     <i class="bx bx-basket"></i>
                 </button>
             </div>
@@ -46,56 +75,65 @@
         </button>
     </nav>
     <header>
-        <div class="container">
-            <div class="contact-box">
-
-
-
-                <img src="../../assets/images/cafecontact.png"
-                    alt="image_onepiece">
-                <div class="right">
-                    <h1>N'hésitez pas a nous contacter !</h1>
-                    <form>
-                        <fieldset>
-                            <legend>Quel est votre genre ?</legend>
-                            <div class="genre">
-                                <input type="radio" id="Madame" name="genre" value="genre">
-                                <label for="Madame">Madame</label>
-
-                                <input type="radio" id="Monsieur" name="genre" value="genre">
-                                <label for="Monsieur">Monsieur</label>
-
-                                <input id="Genre" type="radio" name="genre" value="genre">
-                                <label for="Genre">Autre</label>
-                            </div>
-                        </fieldset>
-
-                    </form>
-                    <br>
-
-                    <label for="nom">Nom Prénom :</label>
-
-                    <input id="nom" type="text" name="nom" class="texte" placeholder="Jean Marie">
-
-
-                    <label for="email">Email :</label>
-                    <input id="email" type="email" name="email" class="texte" placeholder="eva@gmail.com">
-
-
-                    <label for="telephone">Numéro :</label>
-                    <input id="telephone" type="tel" name="telephone" class="texte" placeholder="0692000000">
-
-                    <label for="message">Votre Message</label>
-                    <textarea name="message" id="message" class="text-area" cols="40" rows="8"
-                        placeholder="Votre message"></textarea>
-
-
-                    <input id="button" class="btn" type="button" value="Envoyer">
-
-
+        <div class="containerGlobal">
+            <div class="flexItem">
+                <h1>Contact</h1>
+                <p>
+                    Une quelconque question sur un produit ou sur l'un de nos services ?
+                    N'hésitez pas à nous sollicité via ce formulaire de contact ou bien 
+                    directement par téléphone ou email !
+                </p>
+                <form action="#">
+                    <div class="formField">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name" placeholder="Nom" required>
+                    </div>
+                    <div class="formField">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="formField">
+                        <label for="phone">Numéro de tel</label>
+                        <input type="number" name="phone" id="phone" minlength="10" maxlength="10" placeholder="Numéro de tel *" required>
+                    </div>
+                    <div class="formField">
+                        <label for="choice">Choix</label>
+                        <select name="choice" id="choice">
+                            <option value="default">Votre question concerne ?</option>
+                            <option value="choiceOne">Un produit</option>
+                            <option value="choiceTwo">Nos services</option>
+                        </select>
+                    </div>
+                    <button type="button">Envoyer</button>
+                </form>
+                <div class="contactInfo">
+                    <div class="tel">
+                        <i class='bx bx-phone-call'></i>
+                        <div class="textContent">
+                            <h2>Tel:</h2>
+                            <p>0123456789</p>
+                        </div>
+                    </div>
+                    <div class="fax">
+                        <i class='bx bx-printer'></i>
+                        <div class="textContent">
+                            <h2>Fax:</h2>
+                            <p>0123456789</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <i class='bx bx-envelope'></i>
+                        <div class="textContent">
+                            <h2>Email:</h2>
+                            <p>techstore@mail.re</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="flexItem">
+                <img src="../../assets/images/cafecontact.png" alt="Image café">
+            </div>
+        </div>        
     </header>
     <!-- FOOTER START -->
     <footer>
